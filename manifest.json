@@ -1,0 +1,25 @@
+{
+	"name": "Padding Remover",
+	"version": "1.0",
+	"description": "Removes whitespace from front/back of copied text",
+	"manifest_version": 2,
+	
+	
+	"browser_action":{
+		"default_popup": "popup.html"
+	},
+	
+	"permissions": [ 
+		"activeTab",
+		"clipboardWrite",
+		"clipboardRead"
+	],
+	
+	"content_scripts":[
+		{
+		"matches": ["<all_urls>"],
+		"js": ["trim_whitespace.js"]
+		}
+	]
+}
+
