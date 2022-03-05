@@ -2,7 +2,7 @@
 	"name": "Freedoms Whitespace Remover",
 	"version": "1.1.0",
 	"description": "Trims copied text and optionally removes non-printing characters.",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	
 	
 	"browser_action":{
@@ -10,9 +10,7 @@
 	},
 	
 	"permissions": [ 
-		"activeTab",
 		"clipboardWrite",
-		"clipboardRead",
 		"storage"
 	],
 	

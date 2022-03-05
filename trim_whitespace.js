@@ -18,7 +18,6 @@ document.addEventListener('copy', function(e) {
 				
 				highlight = highlight.toString().trim();
 				if (zwsp){
-					console.log(zwsp);
 					highlight = highlight.replace(/[\u200B-\u200D\uFEFF]/g,"");
 				}
 				//console.log(highlight);
